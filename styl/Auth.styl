@@ -26,26 +26,28 @@ form
       text-align center
       width 100%
 
-    &>button:last-child
+    &>button
       flex 1
-      margin-left 1em
 
-    &>button.a
-      background transparent
-      border-bottom 8px solid var(--u-color)
-      box-sizing border-box
-      color var(--u-color)
-      flex 0
-      padding 16px 0 8px
-      white-space nowrap
+      &:last-child
+        margin-left 1em
 
-      &:hover, &:focus-visible
-        background-image btn-bg-img
-        background-position right center
-        background-size 200% auto
-        border-width 0
-        color btn-hover-color
-        padding 1em
+      &.a
+        background transparent
+        border-bottom 8px solid var(--u-color)
+        box-sizing border-box
+        color var(--u-color)
+        flex 0
+        padding 16px 0 8px
+        white-space nowrap
+
+        &:hover, &:focus-visible
+          background-image btn-bg-img
+          background-position right center
+          background-size 200% auto
+          border-width 0
+          color btn-hover-color
+          padding 1em
 
   &>footer
     align-items center
