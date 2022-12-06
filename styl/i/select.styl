@@ -1,0 +1,29 @@
+@import '../var.styl'
+
+select
+  appearance none
+  border 2px solid #000
+  cursor pointer
+  display inline-block
+  font-family inherit
+  font-size inherit
+  font-weight 500
+  height 32px
+  padding 2px 20px 2px 0
+  text-align center
+  user-select none
+  vertical-align 8px
+  width 120px
+
+select.ico
+  padding-left 28px
+
+select:hover
+  filter hover-filter
+
+select:active
+  box-shadow 0 0 4px inset
+
+select:focus
+  filter focus-filter
+  outline 0

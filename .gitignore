@@ -1,0 +1,8 @@
+.DS_Store
+
+lib/
+node_modules/
+bun.lockb
+/svg.styl
+/styl/var/svg.styl
+

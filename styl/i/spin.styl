@@ -1,0 +1,37 @@
+.spin
+  height 16px
+  margin-left -50px
+  position relative
+  width 100px
+
+.spin:before, .spin:after
+  animation spinUp 1s linear infinite
+  background #eee
+  border-radius 50%
+  box-shadow 32px 0 @background
+  content ''
+  height 16px
+  left 0
+  position absolute
+  top 0
+  width 16px
+
+.spin:after
+  animation spin 1s linear infinite
+  box-shadow none
+  transform rotate(-153deg)
+  transform-origin 40px 0
+
+@keyframes spin
+  0%, 10%
+    transform rotate(-153deg)
+
+  90%, 100%
+    transform rotate(0)
+
+@keyframes spinUp
+  0%, 10%
+    transform translateX(0)
+
+  90%, 100%
+    transform translateX(32px)
