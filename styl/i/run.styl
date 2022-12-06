@@ -1,0 +1,15 @@
+@import '../var/fade.styl'
+
+:global(.run)
+  position relative
+
+  &:before
+    animation-duration 1s
+    animation-name fadeIn
+    background svg-run 50% 50% / 32px no-repeat rgba(255, 255, 255, 0.5)
+    bottom 0
+    content ''
+    left 0
+    position absolute
+    right 0
+    top 0
