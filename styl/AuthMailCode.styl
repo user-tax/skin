@@ -9,7 +9,9 @@ form
     margin 1em 2em 0
     width auto !important
 
-  &>b
-    &>a
-      display inline-block
-      margin 0
+  :global(&>b)
+    margin 0.5em 2em 0
+
+  :global(&>b>a)
+    display inline-block
+    margin 0
